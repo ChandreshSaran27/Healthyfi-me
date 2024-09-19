@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <style>body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #141414;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #E50914;
+  text-decoration: underline;
+}
+
+p{
+color:#fff ;
+}
+
+.food-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  margin-right: 40px;
+color: #E50914;  
+}
+
+.food-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  object-fit: cover;
+}
+
+.food-item h2 {
+  margin: 0;
+}
+
+.go-back-btn {
+  display: block;
+  margin: 30px auto;
+  padding: 10px 20px;
+  background-color: #E50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.go-back-btn:hover {
+  background-color: #303030;
+}</style>
+<head>
+  <title>Calories Description</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calories Description</h1>
+    <div class="food-item">
+      <img src="1.jpeg" alt="Egg">
+      <h2>EGG</h2>
+      <p> In fact, eggs are considered to be the perfect protein source, serving as the standard for comparison for other protein sources.</p>
+      <p>Nutritional Value: Protein - 13g, Calories - 155</p>
+    </div>
+    <div class="food-item">
+      <img src="2.jpeg" alt="Food Image 1">
+      <h2>Meat</h2>
+      <p>Animal-based foods (meat, poultry, fish, eggs, and dairy foods) tend to be good sources of complete protein, while plant-based foods (fruits, vegetables, grains, nuts, and seeds) often lack one or more essential amino acid.</p>
+      <p>Nutritional Value: Protein - 26g, Calories - 133</p>
+    </div><div class="food-item">
+      <img src="3.jpeg" alt="Food Image 1">
+      <h2>Yogurt</h2>
+      <p>The protein content of commercial yogurt is sometimes higher than in milk because dry milk may be added to yogurt during processing.</p>
+      <p>Nutritional Value: Protein - 12g, Calories - 90</p>
+    </div><div class="food-item">
+      <img src="4.jpeg" alt="Food Image 1">
+      <h2>Greek Yogurt</h2>
+      <p>Description: often lack one or more essential amino acid. Greek Yogurt is much healthier than plain Yogurt. </p>
+      <p>Nutritional Value: Protein - 20g, Calories - 150</p>
+    </div><div class="food-item">
+      <img src="5.jpeg" alt="Food Image 1">
+      <h2>Beef</h2>
+      <p>one 3 oz cooked serving of beef provides 50% of your Daily Value (25 grams) of this important nutrient—making it an excellent source.</p>
+      <p>Nutritional Value: Protein - 28g, Calories - 250</p>
+    </div><div class="food-item">
+      <img src="6.jpeg" alt="Food Image 1">
+      <h2>Cheese</h2>
+      <p>Paneer is an alternative for chicken. It is a rich source of casein protein. Paneer has 18 grams of protein per 100 grams.</p>
+      <p>Nutritional Value: Protein - 28g, Calories - 150</p>
+    </div><div class="food-item">
+      <img src="7.jpeg" alt="Food Image 1">
+      <h2>Whey protein</h2>
+      <p>Whey protein is the protein from whey, the watery portion of milk that separates from the curds when making cheese. It is commonly used as a protein supplement. </p>
+      <p>Nutritional Value: Protein - 25g, Calories - 130</p>
+    </div><div class="food-item">
+      <img src="8.jpeg" alt="Food Image 1">
+      <h2>Milk</h2>
+      <p>Milk is a white liquid food produced by the mammary glands of mammals. It is the primary source of nutrition for young mammals before they are able to digest solid food..</p>
+      <p>Nutritional Value: Protein - 8g, Calories - 150</p>
+    </div><div class="food-item">
+      <img src="9.jpeg" alt="Food Image 1">
+      <h2>Peanut Butter</h2>
+      <p>Peanut butter is a food paste or spread made from ground, dry-roasted peanuts. It commonly contains additional ingredients that modify the taste or texture, such as salt, sweeteners, or emulsifiers.</p>
+      <p>Nutritional Value: Protein - 20g, Calories - 150</p>
+    </div><div class="food-item">
+      <img src="10.jpeg" alt="Food Image 1">
+      <h2>Chicken</h2>
+      <p>Chicken is one of the most commonly consumed high protein foods. The breast is the leanest part. Each 3-ounce, or 85 g, serving of roasted, skinless chicken breast will provide you about 27 g of protein and 140 calories .</p>
+      <p >Nutritional Value: Protein - 27g, Calories - 160</p>
+    </div>
+    
+    <!-- Repeat the above div for each food item -->
+    <!-- ... -->
+  </div>
+  <a href="Home.html"><button class="go-back-btn" onclick="goBack()">Go Back</button></a>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
