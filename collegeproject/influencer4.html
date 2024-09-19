@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABC Webpage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 class="heading">"Fitness Flourishes with Expert Guidance."
+    </h1>
+
+  <div class="slider">
+    <div class="slide">
+      <img src="11.jpeg" alt="Image 1">
+      <div class="caption">I'm a nutritionist, functional practitioner, author, entrepreneur and a mother of two teenagers - my most important role to date. I have transformed the bodies</div>
+    </div>
+    <div class="slide">
+      <img src="12.jpeg" alt="Image 2">
+      <div class="caption">At Built With Science we take an evidence-based approach. That's because exercise and nutrition grounded in science works. <br>@JeremyEthier5.69M subscribers252 videos. This channel is focused on providing science-backed training and nutritional videos in order to help you become the best version of yourself.</div>
+    </div>
+    <div class="slide">
+      <img src="13.jpeg" alt="Image 3">
+      <div class="caption">Mukesh Singh Gahlot is an Indian bodybuilder and powerlifter. He holds the national record of winning Mr. India title 4 times, in 2008, 2009, 2010, and 2012L</div>
+    </div>
+  
+  </div>
+
+ <a href="Home.html"> <button class="go-back-button" onclick="goBack()">Go Back</button></a>
+
+  <script src="script.js"></script>
+</body>
+<style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #141414;
+  }
+  
+  .heading {
+    background: #303030;
+    color: #E50914;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+    text-decoration: underline;
+  }
+  
+  .slider {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide {
+    display: none;
+    text-align: center;
+  }
+  
+  .slide img {
+    max-width: 55%;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .go-back-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #E50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .go-back-button:hover {
+    background-color: black;
+  }
+  </style>
+<script>const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+    
+    function showSlide(slideIndex) {
+      slides.forEach((slide, index) => {
+        slide.style.display = index === slideIndex ? 'block' : 'none';
+      });
+    }
+    
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+    
+    function previousSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+    
+    function goBack() {
+      // Replace this with the desired action when the "Go Back" button is clicked.
+      alert('Go back button clicked!');
+    }
+    
+    showSlide(currentSlide);
+    setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    </script>
+</html>

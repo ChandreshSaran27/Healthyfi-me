@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ENTER USER INFORMATION</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #141414;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px 0;
+    color: #E50914;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #E50914;
+}
+
+input[type="text"],
+input[type="number"],
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #E50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #303030;
+}
+</style>
+<script>function submitForm() {
+    // Add your form submission logic here
+    // For example, you can collect form data, process it, and perform any desired actions.
+    alert("Form submitted successfully!");
+}
+
+function goBack() {
+    window.history.back();
+}
+</script>
+<body>
+    <div class="container">
+        <h1>ENTER USER INFORMATION</h1>
+        <form id="userInfoForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" required>
+
+          <a href="index.html">  <button type="button" onclick="goBack()">Go Back</button></a>
+         <a href="Home.html">  <button type="button" onclick="submitForm()">Submit</button></a>
+        </form>
+    </div>
+</body>
+</html>
